@@ -16,11 +16,12 @@ public class FizzBuzzTest {
     }
 
     @Test
-    void should_return_fizz_when_countOff_given_() {
-        //given
+    void should_return_fizz_when_countOff_given_9() {
+        String expected = "Fizz";
+        FizzBuzz fizz = new FizzBuzz();
 
-        //when
+        String actual = fizz.countOff(9);
 
-        //then
+        assertEquals(expected, actual);
     }
 }
