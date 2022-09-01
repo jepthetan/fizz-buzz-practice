@@ -67,7 +67,7 @@ public class FizzBuzzTest {
 
     @Test
     void should_return_fizz_buzz_when_countOff_given_35() {
-        String expected = "FizzBuzz";
+        String expected = "BuzzWhizz";
         FizzBuzz fizz = new FizzBuzz();
 
         String actual = fizz.countOff(35);
@@ -77,7 +77,7 @@ public class FizzBuzzTest {
 
     @Test
     void should_return_fizz_buzz_when_countOff_given_21() {
-        String expected = "FizzBuzz";
+        String expected = "FizzWhizz";
         FizzBuzz fizz = new FizzBuzz();
 
         String actual = fizz.countOff(21);

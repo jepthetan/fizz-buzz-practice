@@ -2,19 +2,20 @@ package tdd.fizzbuzz;
 
 public class FizzBuzz {
     public String countOff (int order) {
-        if (order % 3 == 0 && order % 5 == 0 && order % 7 == 0) {
-            return "FizzBuzzWhizz";
-        } else if (order % 3 == 0 && order % 5 == 0
-                || order % 5 == 0 && order % 7 == 0
-                || order % 3 == 0 && order % 7 == 0) {
-            return "FizzBuzz";
-        } else if (order % 3 == 0) {
-            return "Fizz";
-        } else if (order % 5 == 0) {
-            return "Buzz";
-        } else if (order % 7 == 0) {
-            return "Whizz";
+        StringBuilder orderPrompt = new StringBuilder();
+
+        if (order % 3 == 0) {
+            orderPrompt.append("Fizz");
         }
-        return String.valueOf(order);
+        if (order % 5 == 0) {
+            orderPrompt.append("Buzz");
+        }
+        if (order % 7 == 0) {
+            orderPrompt.append("Whizz");
+        }
+        if (orderPrompt.length()==0) {
+            return String.valueOf(order);
+        }
+        return String.valueOf(orderPrompt);
     }
 }
