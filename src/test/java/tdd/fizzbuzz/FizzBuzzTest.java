@@ -34,4 +34,14 @@ public class FizzBuzzTest {
 
         assertEquals(expected, actual);
     }
+
+    @Test
+    void should_return_whizz_when_countOff_given_28() {
+        String expected = "Whizz";
+        FizzBuzz fizz = new FizzBuzz();
+
+        String actual = fizz.countOff(28);
+
+        assertEquals(expected, actual);
+    }
 }
